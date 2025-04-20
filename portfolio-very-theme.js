@@ -21,6 +21,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   constructor() {
     super();
     this.title = "";
+    this.color="";
     this.t = this.t || {};
     this.t = {
       ...this.t,
@@ -40,6 +41,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
     return {
       ...super.properties,
       title: { type: String },
+      color: { type: String },
     };
   }
 
@@ -66,7 +68,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   // Lit render the HTML
   render() {
     return html`
-<div class="wrapper">
+<div class="wrapper" style="background-color: ${this.color}">
   <h3><span>${this.t.title}:</span> ${this.title}</h3>
   <slot></slot>
 </div>`;
