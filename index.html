@@ -39,7 +39,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #00000066;
+        background-color: #f1f4f542;
         position: fixed;
         top: 100px;
         left: 0;
@@ -49,16 +49,7 @@
         z-index: 1;
         padding: 10px;
         color: white;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        font-family: var(--ddd-font-family);
-        font-size: var(--ddd-font-size-l);
-        font-weight: var(--ddd-font-weight-bold);
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        background-color: var(--ddd-primary-1);
+      
       }
       info-new a {
         border: 2px solid white;
@@ -70,6 +61,7 @@
         text-decoration: none;
 
       }
+      
   </style>
   <title>portfolio-very-theme</title>
 </head>
@@ -80,16 +72,46 @@
     <a name="1"></a>
       <portfolio-screen Title="About">
         <h1>About</h1>
-        <p>Here is a lot of info about me: enter info</p>
+        <p>My name is Tushar Kukawada</p>
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGHcbmjR2uqjQ/profile-displayphoto-shrink_200_200/B4EZPX5eguGwAY-/0/1734493990304?e=1750896000&v=beta&t=JcTXZrJNajJ-34A_ROdcxTxuS2QRPXqFFmI2RdPzw2s" alt="">
         <info-new>
           <a href="#1">About</a>
-          <a href="#2">Research</a>
-          <a href="#3">Presentations</a>
-          <a href="#4">Professional Development</a>
+          <a href="#2">Jobs</a>
+          <a href="#3">Classes</a>
+          <a href="#4">Professional</a>
           <a href="#5">Contact</a>
         </info-new>
       </portfolio-screen>
     </portfolio-very-theme>
+    <portfolio-very-theme color="2">
+      <a name="2"></a>
+      <portfolio-screen Title="Jobs">
+        <h1>Jobs</h1>
+        <p>pervious Jobs</p>
+      </portfolio-screen>
+    </portfolio-very-theme>
+    <portfolio-very-theme>
+      <a name="3"></a>
+      <portfolio-screen Title="Classes">
+        <h1>Classes</h1>
+        <p>Talk about Classes im taking</p>
+      </portfolio-screen>
+    </portfolio-very-theme>
+    <portfolio-very-theme>
+      <a name="4"></a>
+      <portfolio-screen Title="Professional">
+        <h1>Professional</h1>
+        <p>Add linkedin and resume</p>
+      </portfolio-screen>
+    </portfolio-very-theme>
+    <portfolio-very-theme>
+      <a name="5"></a>
+      <portfolio-screen Title="Contact">
+        <h1>Contact</h1>
+        <p>my Contact info</p>
+      </portfolio-screen>
+    </portfolio-very-theme>
+   
     
   
   <script type="module" src="./portfolio-very-theme.js"></script>
