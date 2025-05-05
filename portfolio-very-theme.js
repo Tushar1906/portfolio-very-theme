@@ -58,8 +58,8 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
       
       scroll-button {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: var( --ddd-spacing-5) ;
+        right: var(--ddd-spacing-5);
         z-index: 1000;
       }
     `];
